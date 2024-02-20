@@ -2,6 +2,6 @@
 layout: default
 ---
 
-# Day 2
+# Activity 2
 
 Content will appear.
