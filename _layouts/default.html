@@ -15,8 +15,10 @@
   <body>
     <div class="wrapper">
       <header>
-        <h2>Weeks</h2>
+        <h1><a href=".index.md">Home</a></h1>
+        Course content:
         <ul>
+        <li><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></li>  
         {% for item in site.weeks %}
         <li><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></li>
         {% endfor %}
