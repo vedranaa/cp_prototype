@@ -1,1 +1,10 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minimaltheme: jekyll-theme-minimal
+title: CP Prototype
+description: Sandbox and prototypes for CP pages.
+show_downloads: true
+sidebar:
+  - week-1
+  - week-2
+  - week-3
+
+
