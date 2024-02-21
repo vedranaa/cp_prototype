@@ -4,10 +4,10 @@ description: Minimal is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-podcasts:
-- title: This Week in Tech
+weeks:
+- title: Week 1
   url: https://twit.tv/shows/this-week-in-tech
-- title: Radio Lab
+- title: Week 2
   url: http://www.radiolab.org/
-- title: Night Vale
+- title: Week 3
   url: http://www.welcometonightvale.com/
