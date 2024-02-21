@@ -1,10 +1,6 @@
-theme: jekyll-theme-minimaltheme: jekyll-theme-minimal
-title: CP Prototype
-description: Sandbox and prototypes for CP pages.
+title: Minimal theme
+logo: /assets/img/logo.png
+description: Minimal is a theme for GitHub Pages.
 show_downloads: true
-sidebar:
-  - week-1
-  - week-2
-  - week-3
-
-
+google_analytics:
+theme: jekyll-theme-minimal
