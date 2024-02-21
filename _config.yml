@@ -1,13 +1,8 @@
 title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 weeks:
 - title: Week 1
-  url: https://twit.tv/shows/this-week-in-tech
+  url: ./week1.html
 - title: Week 2
-  url: http://www.radiolab.org/
-- title: Week 3
-  url: http://www.welcometonightvale.com/
+  url: week2.html
