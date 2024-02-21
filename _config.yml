@@ -1,5 +1,6 @@
-theme: jekyll-theme-minimal
+title: Programming prototype
 google_analytics:
+theme: jekyll-theme-minimal
 weeks:
 - title: Week 1
   url: ./week1.html
