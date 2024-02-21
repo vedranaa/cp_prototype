@@ -15,6 +15,8 @@
     <style>
       .mylist {
       list-style:none;
+      padding: 0;
+      font-size:11px;
       }
       .mylist ul a:active {
       background-color:#f0f0f0;
@@ -23,6 +25,10 @@
       color: black;
       font-weight: bold;
       cursor: default;
+      }
+      @media print, screen and (max-width: 960px) {
+      header ul {
+      position:static;
       }
     </style>
 
@@ -36,7 +42,7 @@
         <ul class="mylist">
         {% for item in site.weeks %} 
           {% if page.url contains item.url %}
-            <li class="active"><a href="{{item.url}}">{{item.title}}</a></li>
+            <li class="active"><a class="active" href="{{item.url}}">active {{item.title}}</a></li>
           {% else %}
             <li><a href="{{item.url}}">{{item.title}}</a></li>
           {% endif %}
