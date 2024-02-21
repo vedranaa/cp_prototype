@@ -1,6 +1,5 @@
-title: Minimal theme
-google_analytics:
 theme: jekyll-theme-minimal
+google_analytics:
 weeks:
 - title: Week 1
   url: ./week1.html
