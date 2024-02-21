@@ -11,7 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     {% include head-custom.html %}
+    
     <style>
+      .mylist {
+      list-style:none;
+      }
+      .mylist ul a:active {
+      background-color:#f0f0f0;
+      }
       a.active {
       color: black;
       font-weight: bold;
@@ -26,15 +33,13 @@
       <header>
         <h1><a href="index.html">Home</a></h1>
         Course content:
-        <ul>
-        {% for item in site.weeks %}
-        
+        <ul class="mylist">
+        {% for item in site.weeks %} 
           {% if page.url contains item.url %}
             <li class="active"><a href="{{item.url}}">{{item.title}}</a></li>
           {% else %}
             <li><a href="{{item.url}}">{{item.title}}</a></li>
           {% endif %}
-
         {% endfor %}
         </ul>
      
