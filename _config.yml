@@ -1,6 +1,7 @@
 title: Programming prototype
 google_analytics:
 theme: jekyll-theme-minimal
+markdown: kramdown
 weeks:
 - title: Week 1
   url: week1.html
