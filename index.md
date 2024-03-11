@@ -2,11 +2,6 @@
 layout: default
 ---
 
-# Computer programming
+# Instructions
 
-
-Trying math 
-
-$$
-a^2 + b^2 = c^2
-$$
+Do all activities!
