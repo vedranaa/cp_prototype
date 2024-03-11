@@ -2,4 +2,4 @@
 layout: default
 ---
 
-# Week 2
+# Activity A

@@ -10,6 +10,8 @@ schedule:
     url: week1/activityA.html
   - title: Activity B
     url: week1/activityB.html    
+  - title: Activity C
+    url: week1/activityC.html    
 - title: Week 2
   folder: week2
   url: week2/week2.html
@@ -17,4 +19,16 @@ schedule:
   - title: Activity A
     url: week2/activityA.html
   - title: Activity B
-    url: week2/activityB.html    
+    url: week2/activityB.html
+  - title: Activity C
+    url: week2/activityC.html    
+  - title: Activity D
+    url: week2/activityD.html        
+- title: Week 3
+  folder: week3
+  url: week3/week3.html
+  activities:
+  - title: Activity A
+    url: week3/activityA.html
+  - title: Activity B
+    url: week3/activityB.html    
