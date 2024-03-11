@@ -51,7 +51,7 @@
       }
       .my_activity_list {
       list-style:circle;
-      padding: 0;
+      padding: 10;
       font-size:10px;
       width:150px;
       }
@@ -94,22 +94,19 @@
 
             <ul class="my_activity_list">            
             {% for activity in week.activities %}
-
               {% if page.url contains activity.url %}
                 <li class="active"><a class="active" href="{{ activity.url | relative_url }}">{{ activity.title }}</a></li> 
               {% else %}
                 <li><a href="{{ activity.url | relative_url }}">{{ activity.title }}</a></li>
               {% endif %}
-
             {% endfor %}
-          </ul>
-          
+            </ul>
+            
           {% else %}
             <li><a href="{{ week.url | relative_url}}">{{week.title}}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
-     
       </header>
       <section>
 
