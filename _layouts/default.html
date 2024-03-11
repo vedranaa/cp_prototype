@@ -67,8 +67,9 @@
       cursor: default;
       }
       @media print, screen and (max-width: 960px) {
-      header ul {
-      position:static;
+        header ul {
+        position:static;
+        }
       }
     </style>
 
@@ -82,14 +83,14 @@
         <ul class="my_week_list">
         {% for week in site.schedule %} 
           {% if page.url contains week.folder %}
-            <li class="active"><a class="active" href="{{week.url}}">{{week.title}}</a></li>
+            <li class="active"><a class="active" href="{{ week.url | relative_url }}">{{week.title}}</a></li>
             {% for activity in week.activities %}
-              <ul>
-                <li><a href="{{ site.url }}{{ site.baseurl }}/{{ activity.url }}">{{ activity.title }}</a></li>
+              <ul class="my_week_list">
+                <li><a href="{{ activity.url | relative_url }}">before {{ activity.title }} after</a></li>
               </ul>
             {% endfor %}
           {% else %}
-            <li><a href="{{ site.url }}{{ site.baseurl }}/{{week.url}}">{{week.title}}</a></li>
+            <li><a href="{{ week.url | relative_url}}">{{week.title}}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
