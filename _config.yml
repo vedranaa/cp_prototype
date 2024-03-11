@@ -3,13 +3,15 @@ google_analytics:
 theme: jekyll-theme-minimal
 schedule:
 - title: Week 1
-  url: week1.html
+  folder: week1
+  url: week1/week1.html
   activities:
   - subtitle: Activity A
     url: week1/activityA.html
   - subtitle: Activity B
     url: week1/activityB.html    
 - title: Week 2
+  folder: week2
   url: week2.html
   activities:
   - subtitle: Activity A
