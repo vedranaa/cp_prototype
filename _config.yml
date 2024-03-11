@@ -4,31 +4,31 @@ theme: jekyll-theme-minimal
 schedule:
 - title: Week 1
   folder: week1
-  url: week1/week1.html
+  url: week1.html
   activities:
   - title: Activity A
-    url: week1/activityA.html
+    url: activityA.html
   - title: Activity B
-    url: week1/activityB.html    
+    url: activityB.html    
   - title: Activity C
-    url: week1/activityC.html    
+    url: activityC.html    
 - title: Week 2
   folder: week2
-  url: week2/week2.html
+  url: week2.html
   activities:
   - title: Activity A
-    url: week2/activityA.html
+    url: activityA.html
   - title: Activity B
-    url: week2/activityB.html
+    url: activityB.html
   - title: Activity C
-    url: week2/activityC.html    
+    url: activityC.html    
   - title: Activity D
-    url: week2/activityD.html        
+    url: activityD.html        
 - title: Week 3
   folder: week3
-  url: week3/week3.html
+  url: week3.html
   activities:
   - title: Activity A
-    url: week3/activityA.html
+    url: activityA.html
   - title: Activity B
-    url: week3/activityB.html    
+    url: activityB.html    
