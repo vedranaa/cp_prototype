@@ -1,8 +1,18 @@
 title: Programming prototype
 google_analytics:
 theme: jekyll-theme-minimal
-weeks:
+schedule:
 - title: Week 1
   url: week1.html
+  activities:
+  - subtitle: Activity A
+    url: week1/activityA.html
+  - subtitle: Activity B
+    url: week1/activityB.html    
 - title: Week 2
   url: week2.html
+  activities:
+  - subtitle: Activity A
+    url: week2/activityA.html
+  - subtitle: Activity B
+    url: week2/activityB.html    
