@@ -67,7 +67,7 @@
           {% if page.url contains week.folder %}
             <li class="active"><a class="active" href="{{week.url}}">{{week.title}}</a></li>
             {% for activity in week.activities %}
-              {{activity}}{{ site.url }}{{ site.baseurl }}
+            {{ site.url }}{{ activity.url }}
             {% endfor %}
           {% else %}
             <li><a href="{{week.url}}">{{week.title}}</a></li>
