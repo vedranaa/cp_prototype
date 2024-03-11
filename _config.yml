@@ -6,15 +6,15 @@ schedule:
   folder: week1
   url: week1/week1.html
   activities:
-  - subtitle: Activity A
+  - title: Activity A
     url: week1/activityA.html
-  - subtitle: Activity B
+  - title: Activity B
     url: week1/activityB.html    
 - title: Week 2
   folder: week2
   url: week2/week2.html
   activities:
-  - subtitle: Activity A
+  - title: Activity A
     url: week2/activityA.html
-  - subtitle: Activity B
+  - title: Activity B
     url: week2/activityB.html    
