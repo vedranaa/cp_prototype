@@ -1,7 +1,10 @@
 title: Programming prototype
 google_analytics:
 theme: jekyll-theme-minimal
+
+
 schedule:
+
 - title: Week 1
   folder: week1
   url: week1.html
@@ -12,6 +15,7 @@ schedule:
     url: activityB.html    
   - title: Activity C
     url: activityC.html    
+
 - title: Week 2
   folder: week2
   url: week2.html
@@ -24,6 +28,7 @@ schedule:
     url: activityC.html    
   - title: Activity D
     url: activityD.html        
+
 - title: Week 3
   folder: week3
   url: week3.html
