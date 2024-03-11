@@ -64,10 +64,10 @@
         <p>Content</p>
         <ul class="mylist">
         {% for week in site.schedule %} 
-          {% if page.url contains week.url %}
+          {% if page.url contains week.folder %}
             <li class="active"><a class="active" href="{{week.url}}">{{week.title}}</a></li>
             {% for activity in week.activities %}
-          activity
+              week.activity
             {% endfor %}
           {% else %}
             <li><a href="{{week.url}}">{{week.title}}</a></li>
