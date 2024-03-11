@@ -8,3 +8,11 @@ This is a good ressource for sidebar navigation: https://idratherbewriting.com/d
 
 Math in github (vs pages):
 https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
+
+TLDR, vi skal bruge $a$ for inline math, og
+ 
+$$
+A = a^2
+$$
+ 
+for display math.
