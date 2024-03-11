@@ -6,7 +6,7 @@ theme: jekyll-theme-minimal
 schedule:
 
 - title: Week 1
-  folder: week1
+  folder: week1/
   url: week1.html
   activities:
   - title: Activity A
@@ -17,7 +17,7 @@ schedule:
     url: activityC.html    
 
 - title: Week 2
-  folder: week2
+  folder: week2/
   url: week2.html
   activities:
   - title: Activity A
@@ -30,7 +30,7 @@ schedule:
     url: activityD.html        
 
 - title: Week 3
-  folder: week3
+  folder: week3/
   url: week3.html
   activities:
   - title: Activity A
