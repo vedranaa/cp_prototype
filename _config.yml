@@ -12,7 +12,7 @@ schedule:
     url: week1/activityB.html    
 - title: Week 2
   folder: week2
-  url: week2.html
+  url: week2/week2.html
   activities:
   - subtitle: Activity A
     url: week2/activityA.html
