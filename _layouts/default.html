@@ -94,6 +94,9 @@
 
             <ul class="my_activity_list">            
             {% for activity in week.activities %}
+              
+              {{ activity.url | relative_url }}
+
               {% if page.url contains activity.url %}
                 <li class="active"><a class="active" href="{{ activity.url | relative_url }}">{{ activity.title }}</a></li> 
               {% else %}
