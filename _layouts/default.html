@@ -63,11 +63,14 @@
         <h1><a href="index.html">Home</a></h1>
         <p>Content</p>
         <ul class="mylist">
-        {% for item in site.weeks %} 
-          {% if page.url contains item.url %}
-            <li class="active"><a class="active" href="{{item.url}}">{{item.title}}</a></li>
+        {% for week in site.weeks %} 
+          {% if page.url contains week.url %}
+            <li class="active"><a class="active" href="{{week.url}}">{{week.title}}</a></li>
+            {% for activity in week.activities %}
+          activity
+            {% endfor %}
           {% else %}
-            <li><a href="{{item.url}}">{{item.title}}</a></li>
+            <li><a href="{{week.url}}">{{week.title}}</a></li>
           {% endif %}
         {% endfor %}
         </ul>
