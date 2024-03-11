@@ -41,9 +41,6 @@
       .my_week_list li:last-child{
       border-bottom:1px solid #e0e0e0;
       }
-      .my_week_list li.active {
-      background-color:#f4f4f4;
-      }
       .my_week_list a.active {
       color: black;
       font-weight: bold;
@@ -87,7 +84,7 @@
           {% if page.url contains week.folder %}
             
             {% if page.url contains week.url %}
-              <li class="active"><a class="active" href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a> 
+              <li class="active"><a class="active" href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a>
             {% else %}
               <li><a href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a>
             {% endif %}
@@ -102,7 +99,7 @@
               {% endif %}
             {% endfor %}
             </ul>
-            </li>
+          </li>
           {% else %}
             <li><a href="{{ week.folder | append: week.url | relative_url}}">{{week.title}}</a></li>
           {% endif %}
