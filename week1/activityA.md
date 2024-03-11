@@ -2,4 +2,4 @@
 layout: default
 ---
 
-# Activity 1
+# Activity A
