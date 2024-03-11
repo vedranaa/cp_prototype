@@ -87,9 +87,9 @@
           {% if page.url contains week.folder %}
             
             {% if page.url contains week.url %}
-              <li class="active"><a class="active" href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a></li> 
+              <li class="active"><a class="active" href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a> 
             {% else %}
-              <li><a href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a></li>
+              <li><a href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a>
             {% endif %}
 
             <ul class="my_activity_list">            
@@ -102,7 +102,7 @@
               {% endif %}
             {% endfor %}
             </ul>
-
+            </li>
           {% else %}
             <li><a href="{{ week.folder | append: week.url | relative_url}}">{{week.title}}</a></li>
           {% endif %}
