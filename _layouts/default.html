@@ -83,8 +83,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ 'index.html' | relative_url }}">Home</a></h1>
-        <p>Content</p>
+        <h3><a href="{{ 'index.html' | relative_url }}">Home</a></h3>
         <ul class="my_week_list">
         {% for week in site.schedule %} 
           {% if page.url contains week.folder %}
