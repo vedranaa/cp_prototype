@@ -10,14 +10,7 @@
 | **Exam duration:**   | 2 hours for the midterm test exam (4 hours for the real exam 6th of December) |
 | **Weighting:**       | All tasks have equal weight                                                   |
 | **Number of tasks:** | 5                                                                             |
-| **Number of pages:** | \\pageref\*{LastPage}                                                         |
-\\vspace{2cm}
-\\makeatletter
-\\renewcommand{\\tableofcontents}{\\@starttoc{toc}}
-\\makeatother
-\\tableofcontents
-\\let\\oldsection\\section
-\\renewcommand{\\section}{\\clearpage\\ \\oldsection}
+
 
 ## Exam Instructions
 
