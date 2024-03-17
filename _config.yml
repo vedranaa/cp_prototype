@@ -2,40 +2,91 @@ title: Programming prototype
 google_analytics:
 theme: jekyll-theme-minimal
 
-
 schedule:
 
-- title: Week 1
+- title: Introduction
   folder: week1/
   url: week1.html
   activities:
   - title: Activity A
     url: activityA.html
-  - title: Activity B
-    url: activityB.html    
-  - title: Activity C
-    url: activityC.html    
-  - title: Midterm 2023
-    url: midterm2023fall.html
 
-- title: Week 2
+- title: Assignments, types and operators
   folder: week2/
   url: week2.html
   activities:
   - title: Activity A
     url: activityA.html
-  - title: Activity B
-    url: activityB.html
-  - title: Activity C
-    url: activityC.html    
-  - title: Activity D
-    url: activityD.html        
 
-- title: Week 3
+- title: Conditionals
   folder: week3/
   url: week3.html
   activities:
   - title: Activity A
     url: activityA.html
-  - title: Activity B
-    url: activityB.html    
+
+- title: Iterations
+  folder: week4/
+  url: week4.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Functions
+  folder: week5/
+  url: week5.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Strings
+  folder: week6/
+  url: week6.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Lists
+  folder: week7/
+  url: week7.html
+  activities:
+  - title: Activity A
+    url: activityA.html 
+
+- title: Dictionaries
+  folder: week8/
+  url: week8.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Tuples
+  folder: week9/
+  url: week9.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Files and IO
+  folder: week10/
+  url: week10.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Basic OOP
+  folder: week11/
+  url: week11.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Libraries and modules
+  folder: week12/
+  url: week12.html
+  activities:
+  - title: Activity A
+    url: activityA.html
+
+- title: Numpy and matplotlib
+
