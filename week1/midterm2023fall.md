@@ -11,7 +11,6 @@
 | **Weighting:**       | All tasks have equal weight                                                   |
 | **Number of tasks:** | 5                                                                             |
 
-
 ## Exam Instructions
 
 ### Prerequisites
@@ -37,8 +36,6 @@ If the download script encounters a problem and cannot find the `02002students` 
 When solving exam tasks, follow the instructions from the exam text and complete the provided Python files from the tasks folder. You can test your solutions by running the provided testing script `midterm2023fall_tests.py`, which tests your solution on a small number of test cases. Solving the tasks and using the testing script is similar to how you have solved weekly exercises and projects. However, for the exam, additional test cases will be used during the evaluation after the exam.
 
 If you believe there is a mistake or ambiguity in the text, you should use the most reasonable interpretation of the text to solve the task to the best of your ability. If we, after the exam, find inconsistencies in one or more tasks, this will be taken into account in the assessment.
-
-\\newpage
 
 ### Handing in the Solution
 
@@ -101,6 +98,27 @@ Return the compound interest given principal, rate and frequency.
 * **Returns:**
   The compound interest.
 
+
+### Solution
+
+A file with the following content would be a correct solution for the task:
+
+```python
+"""Task 1: Compound interest."""
+
+def compound_interest(principal:int, rate:float, frequency:int) -> float:
+    """Return the compound interest given principal, rate and frequency.
+
+    :param principal: A positive integer, the principal sum.
+    :param rate: A positive float, the interest rate.
+    :param frequency: A positive integer, the compounding frequency.
+    :return: The compound interest.
+    """
+    I = principal * (1 + rate / frequency) ** frequency - principal
+    return I
+
+```
+
 ## Task 2: Stock Status
 
 When customers visit a webshop page for a certain product, they see information about the stock status. This information is based on two numbers: `number_of_items`, the number of items currently in stock; and `days_to_delivery`, the number of days until delivery of new items from the factory, where 0 indicates that new items are not expected.
@@ -114,6 +132,8 @@ When customers visit a webshop page for a certain product, they see information 
 | `Unknown`                | Either number of items is negative, or there are no items in stock, and the number of days to delivery is negative. |
 
 Another way of representing the stock status is with a decision tree:
+
+![stock decision](images/stock_decision.png)
 
 Your task is to write a function that takes as input `number_of_items` and `days_to_delivery`. The function should return the string with the text to be displayed.
 
@@ -142,6 +162,36 @@ Return stock status message given number of items and days to delivery.
   `str`
 * **Returns:**
   The stock status message.
+
+### Solution
+
+A file with the following content would be a correct solution for the task:
+
+```python
+"""Task 2: Stock status."""
+
+def stock_status(number_of_items:int, days_to_delivery:int) -> str:
+    """Return stock status message given number of items and days to delivery.
+
+    :param number_of_items: An integer, the number of items in stock.
+    :param days_to_delivery: An integer, the number of days to delivery.
+    :return: The stock status message.
+    """
+    if number_of_items<0:
+        return('Unknown')
+    elif number_of_items>5:
+        return('In stock')
+    elif number_of_items>0:
+        return('Only ' + str(number_of_items) + ' left in stock')
+    else:
+        if days_to_delivery<0:
+            return('Unknown')
+        elif days_to_delivery>0:
+            return('Available in ' + str(days_to_delivery) + ' days')
+        else:
+            return('Out of stock')
+
+```
 
 ## Task 3: First Alarm
 
@@ -176,6 +226,30 @@ Return the index of the first alarm given the list of water levels.
   `int`
 * **Returns:**
   The index of the first alarm.
+
+
+### Solution
+
+A file with the following content would be a correct solution for the task:
+
+```python
+"""Task 3: First alarm."""
+
+def first_alarm(water_levels:list) -> int:
+    """Return the index of the first alarm given the list of water levels.
+
+    :param water_levels: A list of floats, the water levels.
+    :return: The index of the first alarm.
+    """
+    for i in range(1, len(water_levels)):
+        if water_levels[i] > 2.0:
+            return i
+        elif water_levels[i] > 1.5 and (water_levels[i] - 
+                                        water_levels[i -1] > 0.2):
+            return i
+    return -1
+
+```
 
 ## Task 4: Typical Successor
 
@@ -216,6 +290,42 @@ Return the letter that most often follows the given letter in the text.
 * **Returns:**
   The letter that most often follows the given letter.
 
+
+### Solution
+
+A file with the following content would be a correct solution for the task:
+
+```python
+"""Task 4: Typical successor."""
+
+def typical_successor(text:str, letter:str) -> str:
+    """Return the letter that most often follows the given letter in the text.
+    
+    :param text: A string, the text.
+    :param letter: A string, the letter.
+    :return: The letter that most often follows the given letter.
+    """
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    my_dict = {}
+    for i in alphabet:
+        my_dict[i] = 0
+    for i in range(len(text) - 1):
+        if text[i].lower() == letter:
+            if text[i + 1].lower() in alphabet:
+                my_dict[text[i + 1].lower()] += 1
+    max = 0
+    for i in alphabet:
+        if my_dict[i] > max:
+            max = my_dict[i]
+            letter = i
+
+    if max > 0:
+        return letter
+    else:
+        return ''
+
+```
+
 ## Task 5: Dice Fairness
 
 You want to check if a set of dice throws is fair by answering three questions: Which number appears the most? How many times does it appear? What’s the expected number of times for each number to be thrown?
@@ -253,3 +363,29 @@ Return the 3-element tuple containing dice statistics.
   `tuple`
 * **Returns:**
   A 3-element tuple containing information about the throws.
+
+
+### Solution
+
+A file with the following content would be a correct solution for the task:
+
+```python
+"""Task 5: Dice fairness."""
+
+def dice_fairness(throws:list) -> tuple:
+    """Return the 3-element tuple containing dice statistics.
+
+    :param throws: A list of integers, the throws of a dice.
+    :return: A 3-element tuple containing information about the throws. 
+    """
+    counts = [0] * 6
+    for r in throws:
+        counts[r - 1] += 1
+    
+    max_count = max(counts)
+    most_frequent = counts.index(max_count) + 1
+    expected = len(throws) / 6
+
+    return most_frequent, max_count, expected
+
+```
