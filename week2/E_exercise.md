@@ -190,3 +190,10 @@ Some problems are chained and can be solved by changing the previous solution ju
     Define a variable string variable `arrival`...
 
 3. You have variables `w` and `l` for the width and the length of a rectangle room in meters. Compute the number of 30-by-30 cm tiles you need to cover the floor. You can cut the tiles, but you should not count on using both parts of the tile which is cut in two. 
+
+
+ADVANCED:
+1. Consider variable-swap. Usuall, one would use a temporary variable. But if the values are numerical, swap can be done without a a temporary variable. How? Hint: Start by choosing one of the variables, and assigning it a value which is a sum of the two values. Now consider the variable which you didn't change. Which value should it have at the end? And can you compute this value from the values you have? After you figure out this step, consider the other variable. 
+2. The previous approach will not work if the sum of the two values is too large to be represented by the current data type. Can you come up with a solution which uses subtraction instead of addition?
+
+

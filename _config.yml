@@ -78,6 +78,9 @@ schedule:
 - title: Files and IO
   folder: week10/
   url: 10_overview.html
+  activities:
+  - title: Miniproject
+    url: P flatten_photos.html
 
 - title: Basic OOP
   folder: week11/
