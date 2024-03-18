@@ -8,20 +8,20 @@ schedule:
   folder: week1/
   url: 1_overview.html
   activities:
-  - title: Why programming?
+  - title: Why ..?
     url: B_why_programming.html
   - title: Files, folders ...
     url: E_files_and_folders.html
   - title: Get to know ...
     url: G_get_to_know.html
-  - title: Writing programs
+  - title: Writing ...
     url: K_writing_programs.html
-  - title: Learning to ...
+  - title: How to ..?
     url: L_learning_programming.html
   - title: This course ...
     url: M_this_course.html
 
-- title: Assignments, types and operators
+- title: Assignments ...
   folder: week2/
   url: 2_overview.html
   activities:
@@ -34,15 +34,15 @@ schedule:
   folder: week3/
   url: 3_overview.html
   activities:
-  - title: Conditions quiz
+  - title: Quiz
     url: K_conditions_quiz.html
 
 - title: Iterations
   folder: week4/
   url: 4_overview.html
   activities:
-  - title: Activity A
-    url: activityA.html
+  - title: Quiz
+    url: K_loops_quiz.html
 
 - title: Functions
   folder: week5/
@@ -64,7 +64,7 @@ schedule:
   activities:
   - title: Lists
     url: G_lists.html
-  - title: Lists quiz
+  - title: Quiz
     url: K_lists_quiz.html
   
 - title: Dictionaries
@@ -83,11 +83,11 @@ schedule:
   folder: week11/
   url: 11_overview.html
 
-- title: Modules and librearies
+- title: Modules ...
   folder: week12/
   url: 12_overview.html
 
-- title: Numpy and matplotlib
+- title: Numpy ...
   folder: week13/
   url: 13_overview.html
 
