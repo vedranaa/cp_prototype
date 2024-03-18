@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Assignments
+# Exercise on assignments
 ** EXERCISE **
 
 TODOS: Some solutions may have videos. Students may vote for problems which should be solved in additional videos.

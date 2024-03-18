@@ -4,21 +4,21 @@ theme: jekyll-theme-minimal
 
 schedule:
 
-- title: Introduction
+- title: Introduction to ...
   folder: week1/
   url: 1_overview.html
   activities:
-  - title: Why programming
+  - title: Why programming?
     url: B_why_programming.html
-  - title: Files and folders
+  - title: Files, folders ...
     url: E_files_and_folders.html
-  - title: Get to know
+  - title: Get to know ...
     url: G_get_to_know.html
   - title: Writing programs
     url: K_writing_programs.html
-  - title: Learning_programming
+  - title: Learning to ...
     url: L_learning_programming.html
-  - title: This course
+  - title: This course ...
     url: M_this_course.html
 
 - title: Assignments, types and operators
@@ -61,6 +61,11 @@ schedule:
 - title: Lists
   folder: week7/
   url: 7_overview.html
+  activities:
+  - title: Lists
+    url: G_lists.html
+  - title: Lists quiz
+    url: K_lists_quiz.html
   
 - title: Dictionaries
   folder: week8/

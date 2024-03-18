@@ -2,8 +2,9 @@
 layout: default
 ---
 
-# Get to know your computer
-**READING MATERIAL**
+# Files, folders, paths and command line
+**TEXT**
+*Part: preparation, activity duration: 20 min*
 
 Computers have become integral to almost every professional and personal activity, making them accessible to people of all backgrounds. For many, the computer serves as a tool for browsing the internet, managing bank accounts, and organizing documents, such as texts, photographs, and music. These activities are user-friendly and typically require minimal knowledge of the computer's underlying organization.
 
@@ -23,5 +24,20 @@ If you don't provide a full path of the resource which you expect your program t
 ## Command line interface
 Using CLI to navigate in your computer folder structure. 
 GUI is often easier to use, but CLI gives an view which is more alike to the true organization. For example, GUI might present some resource as if it is stored on your computer, while in reality it is stored online. Likewise, GUI will usually omit displaying certain (hidden) files and folders, and might not show file extensions.
+
+
+OTHER TEXT
+# Student know your computer
+
+I 1975 udgav et skrivekollektiv, primært bestående af aktive rødstrømper, den første udgave af håndbogen Kvinde, kend din krop. Ideen var at lave en selvhjælpsbog skrevet af kvinder til kvinder. Den skulle oplyse og informere om kvindekroppen samt de særlige betingelser, som knytter sig til kvindelivet.
+
+## File system and terminal
+
+Your file viewer misinforms you. Hidden files, mapped drives.
+Terminal will show you situation, as it is.
+
+Some inspiration (random hits on google):
+- https://www.redhat.com/sysadmin/navigating-filesystem-linux-terminal
+- https://gomakethings.com/navigating-the-file-system-with-terminal/
 
 
