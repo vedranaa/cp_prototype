@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+
+
 # WORDLE
 
 We will work on a simplified version of the game WORDLE. In a pair, spend up to 10 minutes on analyzing this game. Do as much of the following:

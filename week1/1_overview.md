@@ -11,5 +11,7 @@ The aim of this week's activities is to prepare you for learning to program. In 
 - Show you how programs may be written and executed.
 - Give advice regarding how to learn to program and how to take this course.
 
-Before the next weeks activities, you should also complete the week 2 preparation.
+The activities  for this week will not be graded, but they are important for your success in the course.
+
+Remember that before the next weeks activities, you should also complete the week 2 preparation.
 

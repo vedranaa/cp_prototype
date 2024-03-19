@@ -2,7 +2,8 @@
 layout: default
 ---
 
-# Files, folders, paths and command line
+# Files, folders, paths and command line interface
+
 **TEXT**
 *Part: preparation, activity duration: 20 min*
 
@@ -18,6 +19,14 @@ The information in the computer is organized into files and folders. TODO
 Paths:
 Knowing the correct path ensures that you, or your program, can locate the necessary resources. TODO
 
+
+
+
+
+
+
+
+
 If you don't provide a full path of the resource which you expect your program to use, your computer will try to find it according to some rules.
 
 
@@ -31,7 +40,7 @@ OTHER TEXT
 
 I 1975 udgav et skrivekollektiv, primært bestående af aktive rødstrømper, den første udgave af håndbogen Kvinde, kend din krop. Ideen var at lave en selvhjælpsbog skrevet af kvinder til kvinder. Den skulle oplyse og informere om kvindekroppen samt de særlige betingelser, som knytter sig til kvindelivet.
 
-## File system and terminal
+## File system and interface
 
 Your file viewer misinforms you. Hidden files, mapped drives.
 Terminal will show you situation, as it is.

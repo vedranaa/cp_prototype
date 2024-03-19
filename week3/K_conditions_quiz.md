@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+
+
 # Conditions Quiz
 
 1. LEVEL: BASIC. Combining conditions.

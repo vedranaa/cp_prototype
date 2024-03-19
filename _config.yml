@@ -29,6 +29,8 @@ schedule:
     url: A_assignments.html
   - title: Exercise
     url: E_exercise.html
+  -title: Index
+    url: X_index.html
 
 - title: Conditionals
   folder: week3/
@@ -47,16 +49,10 @@ schedule:
 - title: Functions
   folder: week5/
   url: 5_overview.html
-  activities:
-  - title: Activity A
-    url: activityA.html
 
 - title: Strings
   folder: week6/
   url: 6_overview.html
-  activities:
-  - title: Activity A
-    url: activityA.html
 
 - title: Lists
   folder: week7/
@@ -66,6 +62,8 @@ schedule:
     url: G_lists.html
   - title: Quiz
     url: K_lists_quiz.html
+  - title: Wordle
+    url: W_wordle.html
   
 - title: Dictionaries
   folder: week8/

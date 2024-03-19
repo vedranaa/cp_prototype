@@ -1,3 +1,9 @@
+---
+layout: default
+---
+
+
+
 # Loops Quiz
 
 1. LEVEL: BASIC. The task was to write a function which traverses a sequence of integers and returns the index of the first occurrence of element with value equal to the value of ``a``. If such element is not found, the function should return -1. Consider the following attempts to solve this task. Which attempt will produce the desired output? Bonus question: which build-in list method can be used instead? 

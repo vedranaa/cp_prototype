@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # Lists
 
 ## Motivation

@@ -3,7 +3,11 @@ layout: default
 ---
 
 # How to take this course?
-**READINGS AND VIDEOS**
+**READINGS AND VIDEOS?**
+
+## Course Content
+
+The basics. Like driving course. Not Chat-GPT.
 
 ## Types of Exercises
 
