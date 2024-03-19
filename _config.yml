@@ -20,6 +20,8 @@ schedule:
     url: L_learning_programming.html
   - title: This course ...
     url: M_this_course.html
+  - title: Schedule
+    url: X_schedule.html
 
 - title: Assignments ...
   folder: week2/
@@ -45,6 +47,8 @@ schedule:
   activities:
   - title: Quiz
     url: K_loops_quiz.html
+  - title: Populations
+    url: W_populations.html
 
 - title: Functions
   folder: week5/
@@ -77,7 +81,7 @@ schedule:
   folder: week10/
   url: 10_overview.html
   activities:
-  - title: Miniproject
+  - title: Photos
     url: P flatten_photos.html
 
 - title: Basic OOP

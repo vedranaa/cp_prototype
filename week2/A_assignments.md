@@ -21,15 +21,18 @@ Exercises with simple assignment and printing of int, float, str
 Operations: Int's and float's: +, -, *, /, //, %, **, Str's: +, * int 
 Casting
 Assignments involving other variables. 
-- Elements from https://docs.python.org/3/tutorial/introduction.html
 
-Making changes to a variable:
+
+# Ressources
+- [Python tutorial introduction](https://docs.python.org/3/tutorial/introduction.html#)
+- [w3school python variables](https://www.w3schools.com/python/python_variables.asp)
+
+
+
+# Reassigment
 For now, all variables are unmutable -- no changes can be made. 
 Re-assignments is always possible -- using the same name, usually keeping the type.
 
-- Check which built-in functions are relevant https://docs.python.org/3/library/functions.html
 - 
-
-Maybe: mathematical functions form math package. (Packages)
 Maybe: Boolean variables
 Maybe: Floating-point representation

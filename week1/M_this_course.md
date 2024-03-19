@@ -3,13 +3,14 @@ layout: default
 ---
 
 # How to take this course?
-**READINGS AND VIDEOS?**
 
 ## Course Content
 
 The basics. Like driving course. Not Chat-GPT.
 
-## Types of Exercises
+## Exercises (OK to wait reading this until later, or introduce as-we-go.)
+
+Exercises are an essential part of this course. In the beginning of the course, we will provide solutions and clear guidelines to the exercises. As you progress, you will be expected to test your own code. For this, wou will meet exercises in different formats:
 
 - **T'n'T (Template-and-Test)**: In this exercise, we provide both a template file and a test file.
 - **T (Test)**: Here, we provide a test file so you can test your solution.
@@ -30,4 +31,11 @@ A test file is a Python file that you can run to test your solution. It compares
 
 - To help you verify the correctness of your solution or improve an incorrect one.
 - To save you time and effort in writing test cases.
+
+## Quizzes
+- **Self-assessment**
+- **Progress feedback**
+- **Course interaction**
+
+
 

@@ -4,8 +4,7 @@ layout: default
 
 # Files, folders, paths and command line interface
 
-**TEXT**
-*Part: preparation, activity duration: 20 min*
+**STATUS: DRAFT. PLAN: TEXT AND VIDEOS. DURATION:30min**
 
 Computers have become integral to almost every professional and personal activity, making them accessible to people of all backgrounds. For many, the computer serves as a tool for browsing the internet, managing bank accounts, and organizing documents, such as texts, photographs, and music. These activities are user-friendly and typically require minimal knowledge of the computer's underlying organization.
 
@@ -31,19 +30,32 @@ If you don't provide a full path of the resource which you expect your program t
 
 
 ## Command line interface
-Using CLI to navigate in your computer folder structure. 
+
+Using command line interface(CLI) CLI to navigate in your computer folder structure. 
 GUI is often easier to use, but CLI gives an view which is more alike to the true organization. For example, GUI might present some resource as if it is stored on your computer, while in reality it is stored online. Likewise, GUI will usually omit displaying certain (hidden) files and folders, and might not show file extensions.
 
+Resoources:
+- [CLI at w3schools](https://www.w3schools.com/whatis/whatis_cli.asp)
+- [django girls tutorial](https://tutorial.djangogirls.org/en/intro_to_command_line/)
 
-OTHER TEXT
-# Student know your computer
+Often-used commands:
+- `ls` - list files and folders in the current directory
+- `cd` - change directory, `cd ..` to go up one level, `cd foldername` to go to a folder ´foldername´
+- `pwd` - print working directory
 
-I 1975 udgav et skrivekollektiv, primært bestående af aktive rødstrømper, den første udgave af håndbogen Kvinde, kend din krop. Ideen var at lave en selvhjælpsbog skrevet af kvinder til kvinder. Den skulle oplyse og informere om kvindekroppen samt de særlige betingelser, som knytter sig til kvindelivet.
+Executing programs from the command line interface:
+- `python` - start the python interpreter
+- `python filename.py` - execute the python program stored in the file `filename.py`
 
-## File system and interface
 
-Your file viewer misinforms you. Hidden files, mapped drives.
-Terminal will show you situation, as it is.
+Executing MS Word from the command line interface:
+- `winword` - start MS Word
+- `winword filename.docx` - open the file `filename.docx` in MS Word
+
+  
+
+
+
 
 Some inspiration (random hits on google):
 - https://www.redhat.com/sysadmin/navigating-filesystem-linux-terminal
