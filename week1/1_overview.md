@@ -4,10 +4,12 @@ layout: default
 
 # Introduction to programming
 
-Topics to be covered:
+The aim of this week's activities is to prepare you for learning to program. In particular we will:
 
-- Get to know your computer 
-- Writing and executing programs
-- How to learn to program?
-- How to take this course?
+- Motivate why programming is important for scientists in general and for DTU students in particular.
+- Discuss the computer's file system and command-line interface. 
+- Show you how programs may be written and executed.
+- Give advice regarding how to learn to program and how to take this course.
+
+Before the next weeks activities, you should also complete the week 2 preparation.
 
