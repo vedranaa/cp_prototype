@@ -31,7 +31,7 @@ schedule:
     url: A_assignments.html
   - title: Exercise
     url: E_exercise.html
-  -title: Index
+  - title: Index
     url: X_index.html
 
 - title: Conditionals
