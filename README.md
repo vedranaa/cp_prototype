@@ -5,6 +5,7 @@ Repository for cp webpage, which is live at [https://vedranaa.github.io/cp_proto
 The page uses [Minimal](https://github.com/pages-themes/minimal).
 
 This is a good ressource for sidebar navigation: https://idratherbewriting.com/documentation-theme-jekyll-next-version/building-navigation.html
+Maybe I should change sidebar navigation to something like: https://just-the-docs.github.io/just-the-docs
 
 Math in github (vs pages):
 https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions
