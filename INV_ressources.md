@@ -24,6 +24,7 @@
 
 
 # Other courses
+- https://sites.pitt.edu/~naraehan/python3/
 - https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/
 - https://www.cs.cornell.edu/courses/cs1110/2017sp/index.php.html
 - https://runestone.academy/ns/books/published/thinkcspy/index.html

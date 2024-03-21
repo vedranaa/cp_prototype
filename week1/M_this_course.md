@@ -33,9 +33,9 @@ A test file is a Python file that you can run to test your solution. It compares
 - To save you time and effort in writing test cases.
 
 ## Quizzes
-- **Self-assessment**
-- **Progress feedback**
-- **Course interaction**
+- **Self-assessment** Quizzes are provided to help you check your understanding of the material. Always open and not graded.
+- **Progress trackers** Open for limited time such that you can enter your current progressm, allowing you to see whether you are on track, and allowing the teachers to adjust the pace if needed.
+- **Course interaction** A means to influence the course of the course.
 
 
 
