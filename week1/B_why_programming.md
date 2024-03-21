@@ -19,10 +19,7 @@ Unexperienced programmers may have hard time trying to find the specific informa
 
 [Python tutorial](https://docs.python.org/3/tutorial/index.html) is a good place to start learning Python, but it can still be overwhelming for beginners. We will therefore provide a more gentle introduction to the Python language, and programming in general, in this course.
 
-<div style="overflow:hidden;">
-   <a href="https://xkcd.com/353/"><img src="https://imgs.xkcd.com/comics/python.png" alt="Python in xkcd" style="margin:0px 0px -186px 0px;"></a>
-</div>
-
- 
-Python in xkcd with [explanation](https://www.explainxkcd.com/wiki/index.php/353:_Python).
+If I only could include half of the page.
+![Python in xkcd](https://imgs.xkcd.com/comics/python.png)
+ Python in xkcd with [explanation](https://www.explainxkcd.com/wiki/index.php/353:_Python).
 
