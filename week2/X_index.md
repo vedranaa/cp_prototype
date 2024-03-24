@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Index for week 1
+# Index for week 2
 **TODO: CHECK THAT THIS INDEX IS COMPLETE, MAYBE BREAK IT DOWN ON TYPES**
 
 We link to the [official Python documentation](https://docs.python.org/3/), which may contain more information than you need at this point. For example, we covered only a small part of Python [built-in functions](https://docs.python.org/3/library/functions.html). You should use these links  as a reference if you want to learn more about a specific topic.

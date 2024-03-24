@@ -68,22 +68,22 @@ table th:nth-of-type(3) {
 </tr><tr>
 <tr><td colspan="3" class="week-row">Week 2: Assignments, simple data types, built-in operators and functions</td></tr> 
     <td class="top-align">
-        <strong>Text (30 min):</strong> Variables and assignments. <br>
-        <strong>Video (30 min):</strong> Variables and assignments. <br>
-        <strong>Warm-up exercise (30 min):</strong> Variables and assignments. <br>
-        <strong>Quiz (30 min):</strong> Variables and assignments.
+        <strong>Text (60 min):</strong> Variables and assignments. <br>
+        <strong>Exercise (60 min):</strong> Try assignments. <br>
+        <strong>Quiz (30 min):</strong> Check assignments. <br>
+        <strong>Catch up! (30 min)</strong>
     </td><td class="top-align">
-        <strong>Presentation (20 min):</strong> Programming, and programs. <br>
-        <strong>Presentation:</strong> Variables and assignments. <br> 
-        <strong>Warm-up exercise:</strong> Variables and assignments. <br>
-        <strong>Quiz:</strong> Variables and assignments. <br>
-        <strong>Demo:</strong> Solving problems using variables and assignments. <br>
-        <strong>Exercise:</strong> Solving problems using variables and assignments. <br>
-        <strong>Quiz/Survey:</strong> Analyze your exercise solution. <br>
-        <strong>Exercise:</strong> Solving problems using variables and assignments. <br>
-        <strong>Test:</strong> Test your exercise solution.
+        <strong>LIVE Presentation (20 min):</strong> Programming and assignments. <br>
+        <strong>LIVE QUIZ (20 min):</strong> Assignments. <br> 
+        <strong>Break (10 min)</strong>  <br>
+        <strong>Exercise (110 min)</strong> Solving problems using assignments <br>
+        <strong>Break (10 min)</strong>  <br>
+        <strong>LIVE QUIZ (20 min)</strong> How does it go? <br>
+        <strong>Exercise (40 min):</strong> Continue and catch up.
     </td><td class="top-align">
-        <strong>Text (30 minutes)</strong>: Floating point representation, representing integers, representing strings. <br> <strong>Text (30 min)</strong>: Understanding assignments, references and memory. <br> <strong>Exercises (1 hour)</strong>: Additional exercises.
+        <strong>Text (30 min)</strong>: Representing int, float, str and bool. <br> 
+        <strong>Exercise (30 min)</strong>: Object id. <br>
+        <strong>Exercise (30 min)</strong>: Augmented assignment. <br> 
     </td>
 </tr><tr>
 <tr><td colspan="3" class="week-row">Week 3</td></tr> 

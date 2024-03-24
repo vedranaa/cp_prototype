@@ -29,8 +29,12 @@ schedule:
   activities:
   - title: Assignments
     url: A_assignments.html
-  - title: Exercise
-    url: E_exercise.html
+  - title: Try ...
+    url: D_try_assignments.html
+  - title: Check ...
+    url: F_check_assignments.html
+  - title: Exercise ...
+    url: K_exercise_assignments.html
   - title: Index
     url: X_index.html
 

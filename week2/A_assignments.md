@@ -77,7 +77,7 @@ my_favorite_number = my_favorite_number + 3.14
 Here, the second statement reuses the variable name `my_favorite_number` on the left side of the `=`. The value assigned to this variable is  `my_favorite_number + 3.14`, which evaluates to `16.14`.  The variable `my_favorite_number` is now of type `float`.
 
 ## Casting
-[Variables and casting](https://www.w3schools.com/python/python_variables.asp).
+[Variables and casting](https://www.w3schools.com/python/python_variables.asp). TODO text.
 
 
 
@@ -87,7 +87,7 @@ Assignments may look easy, but you should nevertheless invest time practicing th
 
 The coder needs to consider all these aspects: appropriate type, appropriate name, and a value which is suitable for the task.
 
-TODO elaborate and give example
+TODO elaborate and give example.
 
 
 
@@ -96,6 +96,6 @@ TODO elaborate and give example
 - [Python tutorial introduction](https://docs.python.org/3/tutorial/introduction.html#) explains  assignments of numbers of and strings. It also explains the concept of indexing, and lists. We will cover those topics in the later. 
 
 
-
-# Maybe
+# Advanced topics (optional)
+* Any and all functions
 * Floating-point representation
