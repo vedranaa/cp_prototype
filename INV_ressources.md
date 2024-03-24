@@ -16,9 +16,14 @@
 - https://youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V&si=h4wk7j_RWoDEPAhg 
   
 
-# Books
-- https://greenteapress.com/thinkpython2/html/index.html
-- http://www.openbookproject.net/thinkcs/python/english2e/
+# Think Python
+- https://greenteapress.com/thinkpython2/html/index.html The version we used in the 2023 course. 
+- https://allendowney.github.io/ThinkPython/index.html With jupyter notebooks.
+- https://www.openbookproject.net/thinkcs/python/english3e/index.html A version which uses pyscripter IDE.
+- https://runestone.academy/ns/books/published/thinkcspy/index.html An interactive version with MCQs and exercises in pytutor.
+- http://www.openbookproject.net/thinkcs/python/english2e/ This is python 2 version, and should NOT be linked to
+
+# Other books 
 - https://learnpythonthehardway.org/
 - https://www.pythonlikeyoumeanit.com/intro.html
 
@@ -36,7 +41,6 @@
 - https://www.cs.cornell.edu/courses/cs1110/2016sp/lectures/index.php.html
   
 
-
 # Other resources
 - https://mljar.com/blog/jupyter-notebook-online/
 - https://www.udemy.com/share/102Z6G/ (not free)
@@ -44,8 +48,7 @@
 - 
 
 # Quizzes inspiration
-- https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON
-  
+- https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON  
 
 # Maybe other books
 * Wes McKinney's - Data Analysis with Python (Data wrangling with Pandas, Numpy, and IPython)
@@ -57,8 +60,6 @@
 - https://dl-acm-org.proxy.findit.cvt.dk/doi/pdf/10.1145/2662412
 - https://www.tandfonline.com/doi/full/10.11120/ital.2011.10010086
 - https://www-tandfonline-com.proxy.findit.cvt.dk/doi/full/10.1080/03043797.2017.1301383
-
-
 
 
 # Course outline by Andreas

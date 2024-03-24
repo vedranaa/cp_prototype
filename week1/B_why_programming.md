@@ -3,8 +3,7 @@ layout: default
 ---
 
 # Why learn programming? And why learn Python?
-**TEXT AND VIDEOS**
-
+**STATUS: DRAFT. PLAN: TEXT AND VIDEOS. DURATION: 30min**
 
 ## Why learn programming?
 Programming is an essential skill for students at technical universities. In 2023, the revised [Polytechnic foundation](https://www.dtu.dk/uddannelse/bachelor/uddannelsens-opbygning/det-polytekniske-grundlag) placed programming at the first semester for all bachelor study lines at DTU. You will benefit from programming skills in your studies, your future career, and in everyday life.
@@ -39,4 +38,12 @@ Unexperienced programmers may have hard time trying to find the specific informa
 
 [Python tutorial](https://docs.python.org/3/tutorial/index.html) is more suitable for learning Python, but it can still be overwhelming for beginners. We will therefore with this course provide an even more gentle introduction to the Python language, and programming in general, in this course.
 
+## How is Python used in science?
 
+To give you an idea of how Python is used in science and in teaching science, we have conducted interviews with the heads of several study lines at DTU.
+
+* TODO links to the movies where study line heads and/or teachers from different study lines explain how Python is used in teaching and research.
+
+## Additional resources (optional)
+If you want to learn more about Python, you can check the following resources:
+* TODO

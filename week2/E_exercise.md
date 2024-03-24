@@ -3,19 +3,26 @@ layout: default
 ---
 
 # Exercise on assignments
-** EXERCISE **
+**EXERCISE. DURATION: 120min**
 
-TODOS: Some solutions may have videos. Students may vote for problems which should be solved in additional videos.
 
+TODOS:
+* Videos for some solutions. 
+* Voting for problems which should be solved in additional videos.
+* Explain exactly how they should proceed. Make one `.py` file for each problem? Or modify the same file?
+
+## Instructions
 In problems included in this exercise, we first describe a situation where, during the execution of a program, you encounter a specific variable with a certain value. For instance, we might state that you have a variable `a` with the value `3`. In all the problems in this section, the specific value provided is just an example to illustrate the concept. The value of `a` could be any*different* integer number, such as `155`. To keep the problem text short, we won't repeatedly emphasize this in every problem.
 
 We then ask you to define another variable which has a specific type and a concrete value. To achieve this, you must somehow *utilize* the given variable without directly referencing its example value. In other words, you need to construct an assignment where the left side is a correct variable name, the right side is an appropriate expression involving the given variable. For example, after introducing `a = 3`, we might ask you to define an integer variable `b` with a value that is twice the value of `a`. Clearly, the value of `b` should be `6`. However, writing `b = 6` doesn't fulfill the objective, because you *performed the computation* yourself, and you should let the computer do the computation for you. Writing `b = 2 * 3` is not a correct solution either, because you *remembered the value* of variable `a` yourself, and you should let the computer store and retrieve values for you. To use the computers ability to store data and perform computation, you should solve the problem by writing `b = 2 * a`. Now, even if the value of `a` were a different integer, like `19084`, the value of `b` would be twice the value of `a`.
 
-In some of the problems ,you may be given more than one variable, or simply an explanation of the variable type. In some of the problems, you might need to perform multiple assignments to solve the problem.
+In some of the problems, you may be given more than one variable, or simply an explanation of the variable type. In some of the problems, you might need to perform multiple assignments to solve the problem. 
 
-To aid your understanding, solutions for the first problems are provided. After that, in the first part of the exercise, problems are simpler and grouped based on the variable type. As you progress through the exercise, you'll encounter scenarios where you need to use various variable types to find solutions. 
+For some problems we will provide the solution. In the first part of the exercise, problems are simpler and grouped based on the variable type. As you progress through the exercise, you'll encounter scenarios where you need to use various variable types to find solutions. 
 
 Some problems are chained and can be solved by changing the previous solution just a little bit. For chained problems, you can copy the previous solution and just make the needed modification.
+
+## Exercises
 
 1. You have two float variables representing the length and the width of a room in meters, say
     ```python
