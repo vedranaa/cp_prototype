@@ -84,6 +84,7 @@ table th:nth-of-type(3) {
         <strong>Text (30 min)</strong>: Representing int, float, str and bool. <br> 
         <strong>Exercise (30 min)</strong>: Object id. <br>
         <strong>Exercise (30 min)</strong>: Augmented assignment. <br> 
+        <strong>Catch up! (30 min)</strong> 
     </td>
 </tr><tr>
 <tr><td colspan="3" class="week-row">Week 3</td></tr> 

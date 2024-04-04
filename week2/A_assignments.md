@@ -28,6 +28,10 @@ Programs are written for the computer to perform some task. But programs are als
 print("Hello, world!") # This is also a comment
 ```
 
+Python ignores empty lines, so you can use them to separate parts of the program. However, Python does not ignore spaces and tabs at the beginning, so you should be careful with the indentation. We well later see when you have to indent the code. For now, all the code should be aligned to the left.
+
+
+
 
 
 ## Assignment

@@ -20,12 +20,12 @@
       src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/startup.js">
     </script>   
 
-    {% seo %}
+    <!--{!% seo %!} vand removed search engine optimization-->
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
+    <!--{!% include head-custom.html %!} vand removed custom head so long not needed-->
     
     <style>
       .my_week_list {
@@ -76,6 +76,31 @@
         position: static;
         }
       }
+
+      .quiz-panel{
+        padding: 5px 0px 5px 0px;
+      } 
+      .quiz-panel p{
+        margin: 0px;
+        padding: 0px;
+      } 
+      .quiz-table, .quiz-table td, .quiz-table tr{
+        border: none;
+        vertical-align: center;
+        padding: 0;
+        margin: 0;
+      }
+      .quiz-table td.hidden
+      {
+        visibility: hidden;
+      }
+      .quiz-table td.correct {
+        color: mediumseagreen;
+      }
+      .quiz-table td.wrong {
+        color: tomato;
+      }
+      
     </style>
 
   </head>

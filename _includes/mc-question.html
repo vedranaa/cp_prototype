@@ -1,0 +1,48 @@
+<div class="quiz-panel"> 
+  <p>
+  {{ include.text}}
+  </p>
+  <table class="quiz-table">
+      {% for choice in include.choices %}
+      <tr>
+        <td><input type="radio" name={{include.label}}></td>
+        <td>{{ choice}}</td>
+        <td class="hidden">{{ include.feedbacks[forloop.index0]}}</td>
+      </tr>
+      {% endfor %}
+  </table>
+  <div>
+    <button onClick="(function (btn){
+                      correct = {{ include.correct }};
+                      choices = btn.parentNode.previousElementSibling.firstElementChild.children;
+                      panel = btn.parentNode.parentNode;
+                      for (i=0; i<choices.length; i++){
+                        radio = choices[i].firstElementChild.firstElementChild;
+                        radio.setAttribute('disabled', true);
+                        if (radio.checked) {
+                          msg = choices[i].lastElementChild;
+                          msg.classList.remove('hidden');
+                          if (i === correct) {
+                            msg.classList.add('correct');
+                          } else {
+                            msg.classList.add('wrong');
+                          }
+                        }
+                      }
+                      btn.setAttribute('disabled', true);
+                   }(this))">Check Answer</button>
+    <button onClick="(function (btn){
+                      choices = btn.parentNode.previousElementSibling.firstElementChild.children;
+                      for (i=0; i<choices.length; i++){
+                        radio = choices[i].firstElementChild.firstElementChild;
+                        radio.checked = false;
+                        radio.removeAttribute('disabled');
+                        msg = choices[i].lastElementChild;
+                        msg.classList.remove('correct');
+                        msg.classList.remove('wrong');
+                        msg.classList.add('hidden');
+                      }
+                      btn.previousElementSibling.removeAttribute('disabled');
+                   }(this))">Try Again</button>
+  </div>
+</div>

@@ -48,7 +48,10 @@
 - 
 
 # Quizzes inspiration
-- https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON  
+- https://www.w3schools.com/quiztest/quiztest.asp?qtest=PYTHON 
+- https://huggingface.co/learn/nlp-course/chapter1/10
+- https://www.w3schools.com/quiztest/default.asp
+ 
 
 # Maybe other books
 * Wes McKinney's - Data Analysis with Python (Data wrangling with Pandas, Numpy, and IPython)
