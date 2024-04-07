@@ -77,36 +77,46 @@
         }
       }
 
-      .quiz-panel{
+      .question-panel{
         padding: 5px 0px 5px 0px;
       } 
-      .quiz-panel p{
+      .question-panel p{
         margin: 0px;
         padding: 0px;
       } 
-
-      .quiz-panel button{
-        border-radius:5px;
-        border:1px solid;
-        line-height:1;
-        font-size:11px;
-      }
-  
-      .quiz-table, .quiz-table td, .quiz-table tr{
+      .question-table, .question-table td, .question-table tr{
         border: none;
         vertical-align: center;
         padding: 0;
         margin: 0;
       }
-      .quiz-table td.hidden
+      .question-table tr td:first-child {
+        width: 5%;
+      }
+      .question-panel .hidden
       {
         visibility: hidden;
       }
-      .quiz-table td.correct {
+      .question-panel .correct{
         color: mediumseagreen;
       }
-      .quiz-table td.wrong {
+      .question-panel .wrong{
         color: tomato;
+      }
+      .question-panel button{
+        background: #f4f4f4;
+        border:1px solid #e0e0e0;
+        border-radius:5px;
+        line-height:1;
+        font-size:11px;
+        color:#676767;
+      }
+      .question-panel button:hover{
+        border:1px solid #c6c6d6;
+        background: #f0f0f0;
+      }
+      .question-panel button[disabled=disabled], .question-panel button:disabled {
+        opacity: 0.5;    
       }
       
     </style>

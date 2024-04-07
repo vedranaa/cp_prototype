@@ -1,0 +1,128 @@
+<!--
+  Required variables: 
+    include.label (required), the page-unique identifier for the question, for
+      example 'question17' 
+    include.choices(required), a string with semicolon-separated list of choices, 
+      may be "A;B;C;D", "Yes;No", "True;False", and it may contain markdown.
+    include.correct (required), the index (zero-indexed) of the correct answer 
+      or a string with semicolon-separated zeros and ones, for example "0;1;0;1".
+      This will determine whether radio buttons or checkboxes are used. So use
+      "0;0;1;0" for checkboxes with only the third choice correct.
+    include.text (optional), the question text. May contain markdown.
+-->
+
+
+<script>
+function check_radios(btn, correct){
+    // Check if the correct radio button is checked.
+    // Uses DOM traversal to find the radio buttons and feedback, so it relies
+    // on the structure of the HTML
+    tablerows = btn.parentNode.previousElementSibling.firstElementChild.children;
+    for (i=0; i<tablerows.length; i++){
+        select = tablerows[i].firstElementChild.firstElementChild;
+        select.setAttribute('disabled', true);
+    }
+    correctselect = tablerows[correct].firstElementChild.firstElementChild;
+    feedback = btn.parentNode.nextElementSibling;
+    if (correctselect.checked) {
+        feedback.innerHTML = "Correct!";
+        feedback.classList.add('correct');
+        feedback.classList.remove('hidden');
+    } else {
+        feedback.innerHTML = "You didn't select the correct answer.";
+        feedback.classList.add('wrong');
+        feedback.classList.remove('hidden');
+    }
+    btn.setAttribute('disabled', true); 
+}
+
+function check_checkbox(btn, correct){
+    // Check if the correct radio button is checked.
+    // Uses DOM traversal to find the radio buttons and feedback, so it relies
+    // on the structure of the HTML
+    tablerows = btn.parentNode.previousElementSibling.firstElementChild.children;
+
+    // make two boolean variables, one for each correct and incorrect
+    var has_incorrect = false;
+    var got_all = true;
+
+    for (i=0; i<tablerows.length; i++){
+        select = tablerows[i].firstElementChild.firstElementChild;
+        if (select.checked){
+            if (correct.charAt(i)=='0'){
+               has_incorrect = true;
+            }
+        } else {
+            if (correct.charAt(i)=='1'){
+               got_all = false;
+            }
+        } 
+        select.setAttribute('disabled', true);
+    }
+    feedback = btn.parentNode.nextElementSibling;
+    if (has_incorrect){
+        feedback.innerHTML = "At least one of your answers is incorrect.";
+        feedback.classList.add('wrong');
+    } else if (got_all){
+        feedback.innerHTML = "You got all the answers!";
+        feedback.classList.add('correct');
+    } else {
+        feedback.innerHTML = "You didn't select all the correct answers.";
+        feedback.classList.add('wrong');
+    }
+    feedback.classList.remove('hidden');
+    btn.setAttribute('disabled', true); 
+}
+
+function reset(btn){
+    // Reset the question. Also uses DOM traversal.
+    tablerows = btn.parentNode.previousElementSibling.firstElementChild.children;
+    feedback = btn.parentNode.nextElementSibling;
+    for (i=0; i<tablerows.length; i++){
+        select = tablerows[i].firstElementChild.firstElementChild;
+        select.checked = false;
+        select.removeAttribute('disabled');
+    }
+    feedback.classList.add('hidden');
+    feedback.classList.remove('correct');
+    feedback.classList.remove('wrong');
+    feedback.innerHTML = "&nbsp;";
+    btn.previousElementSibling.removeAttribute('disabled');
+}
+</script>
+
+<!--PARSING INPUT-->
+{% assign choices = include.choices | split: ';' %}
+{% assign correct = include.correct | split: ';' | join: "" %}
+{% if correct.size > 1 %}
+  {% assign inputtype = "checkbox" %}
+{% else %}
+  {% assign inputtype = "radio" %}
+{% endif %}
+
+<!--QUESTION PANEL-->
+<div class="question-panel"> 
+  <!--Question and options-->
+  {{%- if include.text -%}}{{- include.text | markdownify -}}{{%- endif -%}}
+  <table class="question-table">
+      {% for choice in choices %}
+      <tr>
+        {% assign id = include.label | append: forloop.index0 %}
+        <td><input type={{ inputtype }} name={{ include.label }} id={{ id }}></td>
+        <td><label for={{ id }}>{{ choice | markdownify }}</label></td>
+      </tr>
+      {% endfor %}
+  </table>
+  <!--Buttons-->
+  <div>
+    {% if (inputtype == "radio") %}
+      <button onclick="check_radios(this, {{ correct }})">Check answer</button>
+    {% else %}
+      <button onclick="check_checkbox(this, {{ correct | prepend: "'" | append: "'"}})">Check answer</button>
+    {% endif %}
+    <button onclick="reset(this)">Try again</button>
+  </div>
+  <!--Feedback, initially empty-->
+  <p class="hidden"> &nbsp;  </p>
+</div>
+
