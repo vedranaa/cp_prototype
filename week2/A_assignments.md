@@ -8,12 +8,12 @@ layout: default
 
 **Sources** The content of this week roughly corresponds to the first two chapters of the book [Think Python](https://allendowney.github.io/ThinkPython/index.html), Chapter 1 [Programming as a way of thinking](https://allendowney.github.io/ThinkPython/chap01.html) and Chapter 2 [Variables and statements](https://allendowney.github.io/ThinkPython/chap02.html), but we also include a few elements from [Chapter 5](https://allendowney.github.io/ThinkPython/chap05.html). In the text, we will link to the relevant passages of this book, which you should read for more details. We also link to relevant pages in [w3schools Python tutorial](https://www.w3schools.com/python/).
 
-<details>
-  <summary>Reading suggestions for the book Think Python</summary>
 
+<details markdown=1>
+<summary markdown="span">Reading suggestions for the book Think Python
+</summary>
   *Chapter 1, Programming as a way of thinking.* Read whole chapter.
   *Chapter 2, Variables and statements.* This chapter introduces a concept of State diagrams, which we will not use in the course. Everything else is relevant. *Chapter 5, Conditionals and recursion.* For now, we use the section on Integer division and modulus, the section on Boolean expressions, and the section on Logical operators.
-  
 </details>
 
 
