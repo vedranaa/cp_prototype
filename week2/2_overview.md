@@ -10,3 +10,5 @@ Computers are good at storing data and performing computation. In this week we w
 - Simple data types (integers, floats, strings, and booleans).
 - Built-in operators.
 - Some simple functions.
+
+

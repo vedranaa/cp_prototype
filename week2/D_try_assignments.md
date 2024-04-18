@@ -15,6 +15,10 @@ You will probably experience that some commands you input cause Python to return
 
 When beginner programmers experience an error message, they lack the experience to understand what *exactly* is causing an error, and they get stuck. It is important that you practice figuring out what is causing an error. 
 
+<details>
+  <summary>Hint</summary>
+  If in doubt, see hint.
+</details>
 
 ## Exercise
 
