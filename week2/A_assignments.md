@@ -12,6 +12,8 @@ layout: default
 <details markdown=1>
 <summary markdown="span">Reading suggestions for the book Think Python
 </summary>
+  You may find it beneficial to read the book as a preparation for the week to come, or as a reference afterwards. We will provide reading suggestions for each week.  
+
   *Chapter 1, Programming as a way of thinking.* Read whole chapter.
   *Chapter 2, Variables and statements.* This chapter introduces a concept of State diagrams, which we will not use in the course. Everything else is relevant. *Chapter 5, Conditionals and recursion.* For now, we use the section on Integer division and modulus, the section on Boolean expressions, and the section on Logical operators.
 </details>
