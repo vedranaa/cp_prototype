@@ -127,6 +127,8 @@
         font-size:12px;
       }
   
+
+      
       details {
         margin: 0 0 20px;
         padding: 5px;
@@ -137,19 +139,42 @@
         color: #267CB9;
       }
 
-
-
       .tryit-panel{
-        padding: 5px 0px 5px 0px;
+        padding: 0px;
+        margin: 0px 0px 20px 0px;
+        width: 500px;
       }
 
-      .tryit-panel button, button {
+      .tryit-panel textarea, .tryit-panel pre{
+        margin: 0px 0px 0px 0px;
+        padding: 5px 5px 5px 5px;
+        width: 100%;
+        height: 200px;
+        font: 12px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+        color: #333;
+        resize: none;
+        overflow: auto;
+        white-space: pre;
+        overflow-wrap: normal;
+      }
+
+      .tryit-panel .info{
+        margin: 5px 0px 0px 0px;
+        font-size: 9px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .tryit-panel button{
         background: #f4f4f4;
         border:1px solid #e0e0e0;
         border-radius:5px;
         line-height:1;
-        font-size:11px;
         color:#676767;
+        padding: 5px;
+        font-size:12px;
       }
       .tryit-panel button:hover:not([disabled]) {
         border:1px solid #c6c6d6;
@@ -158,6 +183,11 @@
       .tryit-panel button[disabled=disabled], .tryit-panel button:disabled {
         opacity: 0.5;    
       }
+
+      .tryit-panel pre {
+        background: #f4f4f4;
+      }
+
 
 
     </style>

@@ -6,7 +6,7 @@
   // output functions are configurable.  This one just appends some text
   // to a pre element.
   function outf(text) { 
-      var mypre = document.getElementById("tryitoutput"); 
+      var mypre = document.getElementById("output"); 
       mypre.innerHTML = mypre.innerHTML + text; 
   } 
   function builtinRead(x) {
@@ -21,10 +21,10 @@
   // configure the output function
   // call Sk.importMainWithBody()
   function runit() { 
-     var prog = document.getElementById("tryitcode").value; 
-     var mypre = document.getElementById("tryitoutput"); 
+     var prog = document.getElementById("yourcode").value; 
+     var mypre = document.getElementById("output"); 
      mypre.innerHTML = '';
-     Sk.pre = "tryitoutput";
+     Sk.pre = "output";
      Sk.configure({output:outf, read:builtinRead, __future__: Sk.python3}); 
      var myPromise = Sk.misceval.asyncToPromise(function() {
          return Sk.importMainWithBody("<stdin>", false, prog, true);
@@ -39,16 +39,19 @@
   } 
 </script> 
 
-<div class="tryit-panel">
-<form> 
-  <textarea id="tryitcode" cols="40" rows="12">
-    {% include.code %}  
-  </textarea><br /> 
-  <button onclick="runit()">Run</button> 
-</form> 
-<pre id="tryitoutput" ></pre>
-</div>
+{%- assign mycode = include.mycode -%}
 
+<div class="tryit-panel">
+<div class="info">Write your code here:</div>
+<textarea id="yourcode" cols="40" rows="12">
+{{mycode}}  
+</textarea>
+<div>
+<button type="button" onclick="runit()">▶ Run</button>  
+</div>
+<div class="info">Output shows up here:</div>
+<pre id="output" ></pre> 
+</div>
 
 
 
