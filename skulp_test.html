@@ -31,9 +31,9 @@ function builtinRead(x) {
 function runit() { 
    var prog = document.getElementById("yourcode").value; 
    var mypre = document.getElementById("output"); 
-   mypre.innerHTML = ''; 
+   mypre.innerHTML = '';
    Sk.pre = "output";
-   Sk.configure({output:outf, read:builtinRead}); 
+   Sk.configure({output:outf, read:builtinRead, __future__: Sk.python3}); 
    var myPromise = Sk.misceval.asyncToPromise(function() {
        return Sk.importMainWithBody("<stdin>", false, prog, true);
    });
@@ -42,6 +42,7 @@ function runit() {
    },
        function(err) {
        console.log(err.toString());
+       mypre.innerHTML = err.toString();
    });
 } 
 </script> 
@@ -55,12 +56,16 @@ function runit() {
 
 <h3>Try This</h3> 
 <form> 
-<textarea id="yourcode" cols="40" rows="10">
-print "Hello World" 
+<textarea id="yourcode" cols="40" rows="12">
+print("Hello World!") 
 
 for i in range(5):
-    print 'hello', i 
+    print('hello', i)
 
+while i < 20:
+    print(i)
+    i = 1.2 * i 
+print(f"Oh, no, now I'm {i}")
 
 </textarea><br /> 
 <button type="button" onclick="runit()">Run</button> 
