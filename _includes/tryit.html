@@ -39,6 +39,7 @@
   } 
 </script> 
 
+<div class="tryit-panel">
 <form> 
   <textarea id="tryitcode" cols="40" rows="12">
 print("Hello World!") 
@@ -49,12 +50,14 @@ for i in range(5):
 while i < 20:
     print(i)
     i = 1.2 * i 
+
 print(f"Oh, no, now I'm {i}")
   
   </textarea><br /> 
-  <button type="button" onclick="runit()">Run</button> 
+  <button onclick="runit()">Run</button> 
 </form> 
-<pre id="tryitoutput" ></pre> 
+<pre id="tryitoutput" ></pre>
+</div>
 
 
 
