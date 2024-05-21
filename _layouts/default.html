@@ -139,7 +139,9 @@
 
 
 
-
+      .tryit-panel{
+        padding: 5px 0px 5px 0px;
+      }
 
       .tryit-panel button, button {
         background: #f4f4f4;
@@ -158,11 +160,6 @@
       }
 
 
-
-
-
-
-
     </style>
 
   </head>
@@ -171,35 +168,35 @@
       <header>
         <h3><a href="{{ 'index.html' | relative_url }}">Home</a></h3>
         <ul class="my_week_list">
-        {% for week in site.schedule %} 
-          {% if page.url contains week.folder %}
+        {%- for week in site.schedule -%} 
+          {%- if page.url contains week.folder -%}
             
-            {% if page.url contains week.url %}
+            {%- if page.url contains week.url -%}
               <li class="active"><a class="active" href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a>
-            {% else %}
+            {%- else -%}
               <li><a href="{{ week.folder | append: week.url | relative_url }}">{{week.title}}</a>
-            {% endif %}
+            {%- endif -%}
 
             <ul class="my_activity_list">            
-            {% for activity in week.activities %}
+            {%- for activity in week.activities -%}
               
-              {% if page.url contains activity.url %}
+              {%- if page.url contains activity.url -%}
                 <li class="active"><a class="active" href="{{ week.folder | append: activity.url | relative_url }}">{{ activity.title }}</a></li> 
-              {% else %}
+              {%- else -%}
                 <li><a href="{{ week.folder | append: activity.url | relative_url }}">{{ activity.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+              {%- endif -%}
+            {%- endfor -%}
             </ul>
           </li>
-          {% else %}
+          {%- else -%}
             <li><a href="{{ week.folder | append: week.url | relative_url}}">{{week.title}}</a></li>
-          {% endif %}
-        {% endfor %}
+          {%- endif -%}
+        {%- endfor -%}
         </ul>
       </header>
       <section>
 
-      {{ content }}
+      {{- content -}}
 
       </section>
     </div>
