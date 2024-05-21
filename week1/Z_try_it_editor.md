@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Try-it-out editor
+# Try-it editor
 
 You can try out Python code in the editor below. Just write your code in the editor and press the "Run" button. The output will be displayed below the editor.
 

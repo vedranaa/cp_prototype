@@ -22,7 +22,7 @@ schedule:
     url: M_this_course.html
   - title: Schedule
     url: X_schedule.html
-  - title: Try-it-out editor
+  - title: Try-it editor
     url: Z_try_it_editor.html
 
 - title: Assignments ...
