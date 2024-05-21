@@ -2,6 +2,21 @@
 layout: default
 ---
 
-# Week
+# Week 4
 
-{% include tryit.html %}
+
+{%- capture code -%}
+print("Hello World!") 
+
+for i in range(5):
+    print('hello', i)
+
+while i < 20:
+    print(i)
+    i = 1.2 * i 
+
+print(f"Oh, no, now I'm {i}")
+{%- endcapture %}
+
+
+{% include tryit.html code=code%}

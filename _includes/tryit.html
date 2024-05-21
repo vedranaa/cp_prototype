@@ -42,17 +42,7 @@
 <div class="tryit-panel">
 <form> 
   <textarea id="tryitcode" cols="40" rows="12">
-print("Hello World!") 
-
-for i in range(5):
-    print('hello', i)
-
-while i < 20:
-    print(i)
-    i = 1.2 * i 
-
-print(f"Oh, no, now I'm {i}")
-  
+    {% include.code %}  
   </textarea><br /> 
   <button onclick="runit()">Run</button> 
 </form> 
