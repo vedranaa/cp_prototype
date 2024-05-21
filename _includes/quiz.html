@@ -1,0 +1,153 @@
+
+
+<script>
+
+    const tables = document.getElementsByClassName('question-table');
+    var nr_points;
+
+    function check_radios(table, correct){
+        // Check radio buttons for one question
+        tablerows = table.firstElementChild.children;
+        for (j=0; j<tablerows.length; j++){
+            select = tablerows[j].firstElementChild.firstElementChild;
+            select.setAttribute('disabled', true);
+        }
+        correctselect = tablerows[correct].firstElementChild.firstElementChild;
+        feedback = table.nextElementSibling;
+        if (correctselect.checked) {
+            feedback.innerHTML = "Correct!";
+            feedback.classList.add('correct');
+            feedback.classList.remove('hidden');
+            nr_points += 1;
+        } else {
+            feedback.innerHTML = "You didn't select the correct answer.";
+            feedback.classList.add('wrong');
+            feedback.classList.remove('hidden');
+        }
+    }
+
+    function check_checkbox(table, correct){
+        // Check checkboxes for one question
+        tablerows = table.firstElementChild.children;
+        var has_incorrect = false;
+        var got_all = true;
+        for (j=0; j<tablerows.length; j++){
+            select = tablerows[j].firstElementChild.firstElementChild;
+            if (select.checked){
+                if (correct.charAt(j)=='0'){
+                    has_incorrect = true;
+                }
+            } else {
+                if (correct.charAt(j)=='1'){
+                    got_all = false;
+                }
+            } 
+            select.setAttribute('disabled', true);
+        }
+        feedback = table.nextElementSibling;
+        if (has_incorrect){
+            feedback.innerHTML = "At least one of your answers is incorrect.";
+            feedback.classList.add('wrong');
+        } else if (got_all){
+            feedback.innerHTML = "You got all the answers!";
+            feedback.classList.add('correct');
+            nr_points += 1;
+        } else {
+            feedback.innerHTML = "You didn't select all the correct answers.";
+            feedback.classList.add('wrong');
+        }
+        feedback.classList.remove('hidden');
+    }
+
+    function check_quiz(btn, inputtypes, corrects){
+        // Check all questions
+        correct_elements = corrects.split("_");
+        
+        nr_points = 0; 
+        for (i=0; i<tables.length; i++){
+            if (inputtypes[i] == 'r'){
+                check_radios(tables[i], correct_elements[i]);
+            }
+            else {
+                check_checkbox(tables[i], correct_elements[i]);
+            }
+        }
+        feedback = btn.parentNode.nextElementSibling;
+        feedback.innerHTML = "You answered " + nr_points + " out of " + tables.length + " questions correctly.";
+        feedback.classList.remove('hidden');
+        btn.setAttribute('disabled', true); 
+    }
+
+    function reset(btn){
+        // Reset all questions
+        for (i=0; i<tables.length; i++){
+            tablerows = tables[i].firstElementChild.children;
+            for (j=0; j<tablerows.length; j++){
+                select = tablerows[j].firstElementChild.firstElementChild;
+                select.checked = false;
+                select.removeAttribute('disabled');
+            }
+            feedback = tables[i].nextElementSibling;
+            feedback.classList.add('hidden');
+            feedback.classList.remove('correct');
+            feedback.classList.remove('wrong');
+            feedback.innerHTML = "&nbsp;";
+        }
+        btn.previousElementSibling.removeAttribute('disabled');
+        feedback = btn.parentNode.nextElementSibling.classList
+        feedback.add('hidden');
+        feedback.innerHTML = "&nbsp;";
+    }
+
+</script>
+
+<!--COLLECTING INPUTTYPES AND CORRECTS TO PASS TO BUTTON-->
+{%- assign inputtypes = '' -%}
+{%- assign corrects = '' -%}
+
+<!--LOOP FOR EACH QUESTION-->
+{% for question in include.questions %}
+
+  {% assign label = "questionlabel_" | append: forloop.index0 | append: "_" %}
+  {%- if question.correct.size > 1 -%}
+    {%- assign inputtype = "checkbox" -%}
+  {%- else -%}
+    {%- assign inputtype = "radio" -%}
+  {%- endif %}
+
+  {%- assign inputtypeletter = inputtype | slice: 0  -%}
+  {%- assign inputtypes = inputtypes | append: inputtypeletter  -%}
+  {%- assign corrects = corrects | append: question.correct | append: '_'  -%}
+  
+  
+  <!--QUESTION PANEL-->
+  <div class="question-panel"> 
+    <!--Question and options-->
+    <p><b>Question {{forloop.index}}</b></p>
+    {{- question.text | markdownify -}}
+    <table class="question-table">
+        {% for choice in question.choices %}
+        <tr>
+        {% assign id = label | append: forloop.index0 %}
+        <td><input type={{ inputtype }} name={{ label }} id={{ id }}></td>
+        <td><label for={{ id }}>{{ choice | markdownify }}</label></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <!--Feedback, initially empty-->
+    <p class="hidden"> &nbsp;  </p>
+</div>
+{% endfor %}
+
+<div class="buttons-panel">
+    <div>
+        <button onclick="check_quiz(this, {{ inputtypes | prepend: "'" | append: "'"}}, {{ corrects | prepend: "'" | append: "'"}})">Check answers</button>
+        <button onclick="reset(this)">Reset quiz</button>
+    </div>
+    <!--Feedback, initially empty-->
+    <p class="hidden"> &nbsp;  </p>
+</div>
+
+
+
+

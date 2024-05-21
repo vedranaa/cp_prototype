@@ -6,7 +6,9 @@ layout: default
 **STATUS: DRAFT. PLAN: TEXT AND VIDEOS. DURATION: 30min**
 
 ## Why learn programming?
-Programming is an essential skill for students at technical universities. In 2023, the revised [Polytechnic foundation](https://www.dtu.dk/uddannelse/bachelor/uddannelsens-opbygning/det-polytekniske-grundlag) placed programming at the first semester for all bachelor study lines at DTU. You will benefit from programming skills in your studies, your future career, and in everyday life.
+Programming is an essential skill for students at technical universities. In 2023, the revised [polytechnic foundation](https://www.dtu.dk/english/education/undergraduate/undergraduate-programmes-in-danish/bsc-eng-programmes) (in danish
+[det polytekniske grundlag](https://www.dtu.dk/uddannelse/bachelor/uddannelsens-opbygning/det-polytekniske-grundlag)) placed programming at the first semester for all bachelor study lines at DTU. You will benefit from programming skills in your studies, your future career, and in everyday life.
+
 
 ## Why learn Python?
 Python is a popular programming language that is widely used in science and engineering. According to [TIOBE index](https://en.wikipedia.org/wiki/TIOBE_index)) Python is in 2024 the most popular programming language and still gaining popularity. Python is simple, and easy to learn. It is used in scientific fields including physics, chemistry, biology, life science and data science, and many Python libraries are available for these fields. 

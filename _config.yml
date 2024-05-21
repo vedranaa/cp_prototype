@@ -29,6 +29,8 @@ schedule:
   activities:
   - title: Assignments
     url: A_assignments.html
+  - title: TESTING QUIZ
+    url: B_introquiz_test.html
   - title: Try ...
     url: D_try_assignments.html
   - title: Check ...

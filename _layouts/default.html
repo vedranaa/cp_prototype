@@ -86,24 +86,22 @@
       } 
       .question-table, .question-table td, .question-table tr{
         border: none;
-        vertical-align: center;
         padding: 0;
         margin: 0;
       }
       .question-table tr td:first-child {
         width: 5%;
       }
-      .question-panel .hidden
-      {
+      .question-panel .hidden, .buttons-panel .hidden {
         visibility: hidden;
       }
-      .question-panel .correct{
+      .question-panel .correct {
         color: mediumseagreen;
       }
-      .question-panel .wrong{
+      .question-panel .wrong {
         color: tomato;
       }
-      .question-panel button{
+      .question-panel button, .buttons-panel button {
         background: #f4f4f4;
         border:1px solid #e0e0e0;
         border-radius:5px;
@@ -111,14 +109,23 @@
         font-size:11px;
         color:#676767;
       }
-      .question-panel button:hover{
+      .question-panel button:hover:not([disabled]), .buttons-panel button:hover:not([disabled]) {
         border:1px solid #c6c6d6;
         background: #f0f0f0;
       }
-      .question-panel button[disabled=disabled], .question-panel button:disabled {
+      .question-panel button[disabled=disabled], .question-panel button:disabled, 
+      .buttons-panel button[disabled=disabled], .buttons-panel button:disabled  {
         opacity: 0.5;    
       }
 
+      .buttons-panel{
+        padding: 10px 0px 5px 0px;
+      } 
+      .buttons-panel button {
+        padding: 5px;
+        font-size:12px;
+      }
+  
       details {
         margin: 0 0 20px;
         padding: 5px;
@@ -128,9 +135,6 @@
       summary::marker {
         color: #267CB9;
       }
-
-
-      
     </style>
 
   </head>

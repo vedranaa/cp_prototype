@@ -1,0 +1,5 @@
+- Make external js file for quiz and question support. Combine the code for the two: the check_radios and check_checkbox should take a table (or panes) as input, the feedback is accessed as the last element of the questions panel, which is a parent of table. 
+- Make check_question function which calls either check_radios or check_checkbox, and disables button.
+- Resets should be reset_question and reset_quiz.
+
+- Make external css file for all my additions.

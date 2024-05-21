@@ -8,6 +8,7 @@
 - https://www.hackerrank.com/domains/python
 - https://www.codecademy.com/learn/learn-python-3
 - https://open.kattis.com/problems?order=difficulty_data
+- https://programming-24.mooc.fi/
 
 
 # Addon

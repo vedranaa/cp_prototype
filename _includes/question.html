@@ -1,14 +1,16 @@
 <!--
-  Required variables: 
-    include.label (required), the page-unique identifier for the question, for
+  There are two ways to use this include.
+  1. Passing include.question, which contains fields label, text, choices, and correct.
+  2: Passing the fields separately: 
+    include.label, the page-unique identifier for the question, for
       example 'question17' 
-    include.choices(required), a string with semicolon-separated list of choices, 
+    include.text, the question text. May contain markdown.
+    include.choices, a string with semicolon-separated list of choices, 
       may be "A;B;C;D", "Yes;No", "True;False", and it may contain markdown.
-    include.correct (required), the index (zero-indexed) of the correct answer 
+    include.correct, the index (zero-indexed) of the correct answer 
       or a string with semicolon-separated zeros and ones, for example "0;1;0;1".
       This will determine whether radio buttons or checkboxes are used. So use
-      "0;0;1;0" for checkboxes with only the third choice correct.
-    include.text (optional), the question text. May contain markdown.
+      "0;0;1;0" for checkboxes with only the third choice correct. 
 -->
 
 
@@ -45,7 +47,6 @@ function check_checkbox(btn, correct){
     // make two boolean variables, one for each correct and incorrect
     var has_incorrect = false;
     var got_all = true;
-
     for (i=0; i<tablerows.length; i++){
         select = tablerows[i].firstElementChild.firstElementChild;
         if (select.checked){
@@ -92,23 +93,34 @@ function reset(btn){
 </script>
 
 <!--PARSING INPUT-->
-{% assign choices = include.choices | split: ';' %}
-{% assign correct = include.correct | split: ';' | join: "" %}
+{% if include.question %}
+  {% assign text = include.question.text %}
+  {% assign label = include.question.label %}
+  {% assign choices = include.question.choices %}
+  {% assign correct = include.question.correct %}
+{% else %}
+  {% assign label = include.label %}
+  {% assign text = include.text %}
+  {% assign choices = include.choices | split: ';' %}
+  {% assign correct = include.correct %}
+{% endif %}
 {% if correct.size > 1 %}
   {% assign inputtype = "checkbox" %}
 {% else %}
   {% assign inputtype = "radio" %}
 {% endif %}
 
+
 <!--QUESTION PANEL-->
 <div class="question-panel"> 
   <!--Question and options-->
-  {{%- if include.text -%}}{{- include.text | markdownify -}}{{%- endif -%}}
+  <p><b>Question</b></p>
+  {{- text | markdownify -}}
   <table class="question-table">
       {% for choice in choices %}
       <tr>
-        {% assign id = include.label | append: forloop.index0 %}
-        <td><input type={{ inputtype }} name={{ include.label }} id={{ id }}></td>
+        {% assign id = label | append: forloop.index0 %}
+        <td><input type={{ inputtype }} name={{ label }} id={{ id }}></td>
         <td><label for={{ id }}>{{ choice | markdownify }}</label></td>
       </tr>
       {% endfor %}
@@ -120,7 +132,7 @@ function reset(btn){
     {% else %}
       <button onclick="check_checkbox(this, {{ correct | prepend: "'" | append: "'"}})">Check answer</button>
     {% endif %}
-    <button onclick="reset(this)">Try again</button>
+    <button onclick="reset(this)">Reset question</button>
   </div>
   <!--Feedback, initially empty-->
   <p class="hidden"> &nbsp;  </p>

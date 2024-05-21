@@ -24,10 +24,21 @@ Jupyter notebooks may be run on your computer, but there are also online service
 
 The focus of this course is on writing and running python code, regardless of whether it is run from a `.py` file, from an IDE or in a Jupyter notebook. To solve assignments in the course you will need to write python code in a `.py` file. We will not be using Jupyter notebooks, but you might want to try them.
 
+### Running python code online (or in browser)
+TODO: What requires internet and what does not? And when? When loading, when running?
 
-### Jupyter lite
-[Jupyter lite](https://jupyter.org/try-jupyter/lab/)
+In this course, we expect you to get python installed and run python code it on your computer. If you can't running python on your computer (for example, before installing python in the first weeks of the corse, or when using another computer), you may use one of the following services. However, remember that this will not be possible for the exam. And also note that online tools might have limitations (e.g. getting user input, loading files).  
 
+- [W3Scohools try-it editor](https://www.w3schools.com/python/trypython.asp?filename=demo_default) is a very simple online python editor provided by W3Schools. No account needed, and only a discrete ad at the top of the page. Requires internet connection to run the code.
+- [Online-python](https://www.online-python.com/) has a few more features than W3Schools (saving the file, sharing the file), but also more prominent ads.
+- [Jupyter lite](https://jupyter.org/try-jupyter/lab/), supports running jupyter notebooks in-browser, but can also be used to run python code. For this: under 'Other' chose 'Python File'. Right-click inside the file text, select 'Create Console for Editor', and then select Python (Pyodide) kernel. Now *go back* to the file text (that is, click in the file text). You can now run the code by clicking the 'Run' button in the top menu, and selecting 'Run All Code'. This is a bit more complicated than the other options, but allows working with files and folders similar to how you would work with files on your computer. 
+- [Code skulptor](https://py3.codeskulptor.org/) implements a subset of python in the browser with the focus on interaction and graphical libraries. Nice and simple look with no ads. Despite focusing on gui, code skulptor can easily be used to run simple python code from the first weeks of our course.
+- [Brython](https://brython.info/tests/editor.html?lang=en), yet another way to run python code in the browser.
+
+
+**Advanced** Some of those are related, while some use very different technologies. Fore example, Jupyter lite uses [pyodide](https://pyodide.org/en/stable/), which translates python code to web assembly code. Code skulptor uses [skulpt](https://skulpt.org/) which translates python to JavaScript. Brython also translates to JavaScript. There are also services requiring the user to create a free account:  
+[Pyscript](https://pyscript.com/) where you can maintain several projects; has focus on web development.
+[Python anywhere](https://www.pythonanywhere.com/) also with focus on web development. [Replit](https://replit.com/), a more advanced tool resembling desktop editor.
 
 ## Additional resources (optional):
 - [w3school python get started](https://www.w3schools.com/python/python_getstarted.asp)
