@@ -22,6 +22,8 @@ When beginner programmers experience an error message, they lack the experience 
 
 ## Exercise
 
+TODO: Fix indentation of exercises.
+
 * Following lines of code contain an error. What is the error? Try running this code in Python and see what happens. 
 
 ```python
@@ -32,12 +34,24 @@ third number = 9
 print(first_number + third number)
 ```
 
-*  Following lines of code contain an error. What is the error? Try running this code in Python and see what happens. 
+* There is something wrong with the following lines of code. Try running this code and see what happens.  
+
+```python
+print = 'Hello, World!'
+print('Hello to you too!')
+```
+
+Understanding error messages is an important part of learning to program. In the example above, the error message stated that 'str' object is not callable. *Being callable* is a property of python objects which can be called like functions. We call a function when we write parentheses `()` after objects name, with or without something between parentheses. For example we call `print` function by writing  `print('Hello, World!')`. A string cannot be called. You can test this by writing `'Hello world'(7)` or just `'Hello world'()`.  
+  
+Now, the actual problem in the code above is in the line before the line throwing the error. The line `print = 'Hello, World!'` assigns a string to the variable name `print`. This is a problem because `print` is a name of a built-in function in Python. After we use `print` as a name of the string variable, we cannot use it as a function anymore.  
+
+*  TODO, move to lists exercises. Following lines of code contain an error. What is the error? Try running this code in Python and see what happens. 
 
 ```python
 name = "This is my name"
 list = "This is my list: trees, bushes, flowers."
-sqquence = "This is my sequence: 1, 2, 3."
+sequence = "This is my sequence: 1, 2, 3."
+```
 
 
 

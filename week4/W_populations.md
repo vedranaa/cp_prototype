@@ -2,6 +2,10 @@
 layout: default
 ---
 
+# Population models
+
+TODO: This is just a sketch
+
 Note to teacher: here we loop and plot in each iteration. Next week, we use this as a motivation to introduce the concept of a lists.
 
 We will work with discrete population models, which are mathematical models used to predict the future population size, and to investigate the effects of different factors on the population growth. When using such models, it is practical to plot the population size as a function of time. While we have not yet covered the topic of plotting, we have provided you with some code that you can use to visualize the population growth.

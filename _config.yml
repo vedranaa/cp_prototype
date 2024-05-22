@@ -90,7 +90,7 @@ schedule:
   url: 10_overview.html
   activities:
   - title: Photos
-    url: P flatten_photos.html
+    url: P_flatten_photos.html
 
 - title: Basic OOP
   folder: week11/

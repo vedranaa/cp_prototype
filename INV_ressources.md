@@ -8,7 +8,10 @@
 - https://www.hackerrank.com/domains/python
 - https://www.codecademy.com/learn/learn-python-3
 - https://open.kattis.com/problems?order=difficulty_data
+
+# And maybe used
 - https://programming-24.mooc.fi/
+- https://cholmcc.gitlab.io/nbi-python/index.en.html
 
 
 # Addon

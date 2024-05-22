@@ -2,47 +2,55 @@
 layout: default
 
 questions:
-- text: | 
-    What if this is a long question that spans multiple lines?  Maybe even some code?
+- text: |
+    How many lines are printed out by the code below?
     ```python
-    def foo():
-        return "bar"
+    for i in range(5):
+        print('Hej')
+    print('med dig')
     ```
+  choices: 
+  - 5
+  - 4
+  - 10
+  - 8
+  - 6
+  correct: "4"
+
+- text: | 
+    What is printed out by the code below?
+    ```python
+    for i in range(10):
+        print(i, end=', ')
+    print('and', i)
+    ```
+  choices: 
+  - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10
+  - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 0
+  - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 9
+  - 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and -1
+  correct: "2"
+
+
+- text: I want to crate a string `greeting` with the value `'I am Vedrana from Croatia'` but with the values of the variables `name` and `country` inserted in the indicated place. Which of the following code snippets will do that?
   choices: 
   - |
-    Pink. And also this is a long answer that spans multiple lines. Maybe I would like to introduce some code in the answer?
-    ```python
-    def foo():
-        return "bar"
-    ```
-  - Blue
-  - Red
-  - Yellow
-  correct: "1"
+    `greeting = print('I am ', name, ' from ', country`)
+  - |
+    `greeting = print('I am', name, 'from', country`)
+  - |
+    `greeting = 'I am ', name, ' from ', country`
+  - |
+    `greeting = 'I am', name, 'from', country`
+  - |
+    `greeting = 'I am ' + name + ' from ' + country`
+  - |
+    `greeting = f'I am {name} from {country} .'`
+  - |
+    `greeting = 'I am %s from %s' % (name, country)`
 
-- text: Where was I born?
-  choices: 
-  - Daruvar
-  - Zagreb
-  - New York
-  - Boston
-  correct: "1"
+  correct: "0000111"
 
-- text: Where would I like to live?
-  choices: 
-  - Daruvar
-  - Zagreb
-  - New York
-  - Odense
-  correct: "0110"
-
-- text: Another nice city?
-  choices: 
-  - Daruvar
-  - Zagreb
-  - New York
-  - Boston
-  correct: "3"
 ---
 
 # This is to test the quiz functionality
