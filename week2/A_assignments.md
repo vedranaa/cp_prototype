@@ -41,7 +41,7 @@ Python ignores empty lines, so you can use them to separate parts of the program
 
 A note about terminology. The terms *program* and *code* are sometimes used interchangebly. However, the term *program* implies a complete, usualy larger, set of commands to preform a specific task. The term *code* refers to any text written in a programming language. Yet another related term is *script* which is used for a smaller sequence of commands. Furthermore, a term for a file containing commands in Python is a *module*.
 
-Similary, term *coding* describes the act of writing code. The term *programing* is describes a broader process involving problem-solving, designing the solution, writing the code, and preforming tests.
+Similary, term *coding* describes the act of writing code. The term *progrmaming* encompasses more than coding. Programming involves problem-solving, designing the solution, writing the code, and preforming tests.
 
 ## Assignment
 
