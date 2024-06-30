@@ -39,6 +39,10 @@ print("Hello, world!") # This is also a comment
 
 Python ignores empty lines, so you can use them to separate parts of the program. However, Python does not ignore a space or a tab at the beginning of a line, so you should be careful with the indentation. We well later see when you have to indent the code. For now, all the code should be aligned to the left.
 
+A note about terminology. The terms *program* and *code* are sometimes used interchangebly. However, the term *program* implies a complete, usualy larger, set of commands to preform a specific task. The term *code* refers to any text written in a programming language. Yet another related term is *script* which is used for a smaller sequence of commands. Furthermore, a term for a file containing commands in Python is a *module*.
+
+Similary, term *coding* describes the act of writing code. The term *programing* is describes a broader process involving problem-solving, designing the solution, writing the code, and preforming tests.
+
 ## Assignment
 
 In programming, [*variables*](https://allendowney.github.io/ThinkPython/chap02.html#variables) are used to store values. A variable has a *name*, and a *value* of a certain *type*. The name is used in the program text to access the variable.  The value is the actual content of the variable and the type says what kind of variable it is.
