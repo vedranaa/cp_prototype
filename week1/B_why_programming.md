@@ -11,7 +11,7 @@ Programming is an essential skill for students at technical universities. In 202
 
 
 ## Why learn Python?
-Python is a popular programming language that is widely used in science and engineering. According to [TIOBE index](https://en.wikipedia.org/wiki/TIOBE_index)) Python is in 2024 the most popular programming language and still gaining popularity. Python is simple, and easy to learn. It is used in scientific fields including physics, chemistry, biology, life science and data science, and many Python libraries are available for these fields. 
+Python is a popular programming language that is widely used in science and engineering. According to [TIOBE index](https://en.wikipedia.org/wiki/TIOBE_index), Python is in 2024 the most popular programming language and still gaining popularity. Python is simple, and easy to learn. It is used in scientific fields including physics, chemistry, biology, life science and data science, and many Python libraries are available for these fields. 
 
 <!---If only I could include just half of the comic.
 ![Python in xkcd](https://imgs.xkcd.com/comics/python.png)
